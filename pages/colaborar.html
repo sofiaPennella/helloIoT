@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="keywords" content="IOT, INTERNET-OF-THINGS, RASPBERRY, RP, DOCKER, DOCKER-COMPOSEI, ARDUINO, ESP32, ESP8266, WOT, GATEWAY, OPEN-SOURCE, TUTORIAL">
+        <meta name="description" content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
+        <!-- MDB icon -->
+        <link rel="icon" href="../images/logo-blanco.png" type="image/x-icon">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="../mdb/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="../mdb/css/mdb.min.css">
+        <!-- My custom Styles -->
+        <link rel="stylesheet" href="../estilos/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <title>Hello IoT | ¡Anímate a colaborar!</title>
+    </head>
+    <body class="gradient">
+        <!-- Nav -->
+        <header>
+            <nav class="navbar navbar-expand-lg z-depth-2 rounded">
+                <a class="navbar-brand ml-4" href="../index.html">
+                    <img src="../images/logo-blanco.png" alt="Logo" loading="lazy" class="ml-4">
+                </a>
+                <button class="navbar-toggler first-button mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                <div class="container-fluid container__nav">
+                    <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent20">
+                        <ul class="navbar-nav ml-auto mb-4 mt-4 text-left">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ACERCA DE</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">ARTÍCULOS</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="articulos.html#docker">Docker</a>
+                                    <a class="dropdown-item" href="articulos.html#mqtt">MQTT</a>
+                                    <a class="dropdown-item" href="articulos.html#wot">Web of Things</a>
+                                    <a class="dropdown-item" href="articulos.html#bluetooth">Bluetooth y BLE</a>
+                                    <a class="dropdown-item" href="articulos.html#lora">LoRa</a>
+                                    <a class="dropdown-item" href="articulos.html#sistemas">Sistemas Embebidos</a>
+                                    <a class="dropdown-item" href="articulos.html"><strong>VER TODOS</strong> </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="proyectos.html">PROYECTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="colaborar.html">COLABORAR</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Portrait -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-11 header__portrait--colaborar">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
+                        <div class="wow fadeInLeft">
+                            <h1 class="mb-4">Colaborar</h1>
+                            <h4 class="mt-4 text-wrap">Podés forkear alguno de los proyectos, aplicarle mejoras y enviarlas para su publicación</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="button__down">
+                        <h6 class="button__margin">contactar</h6>
+                        <a href="#card"><img src="../images/flecha.png" alt="Boton bajar" class="button__image animated pulse infinite"></a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Form -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                   <!-- Default form contact -->
+                        <form class="text-center bg-white z-depth-4 p-5 wow fadeInRight" style="margin-top: 10vh; margin-bottom: 10vh;" action="gracias.html" method="post" id="form">
+                            <h3>Formulario de contacto</h3>
+                            <p>
+                                Te pedimos que completes el formulario con tus datos y con el aporte 
+                                que quisieras realizar. Nos comunicaremos con vos a la brevedad.
+                            </p>
+                            <!-- Name -->
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- First name -->
+                                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Apellido">
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-Mail">
+                            <!-- Subject -->
+                            <select class="browser-default custom-select mb-4">
+                                <option class="optionForm" value="" disabled>Elegir una opción</option>
+                                <option class="optionForm" value="1" selected>Tu aporte</option>
+                                <option class="optionForm" value="2">Edición de entradas de Hello IoT</option>
+                                <option class="optionForm" value="3">Mejora de proyectos en Github</option>
+                            </select>
+                            <!-- Message -->
+                            <div class="form-group">
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                            </div>
+                            <!-- Send button -->
+                            <button class="btn btn-info btn-block p-3 button__font" type="submit">Enviar</button>
+
+                        </form>
+                        <!-- Default form contact -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer con Boostrap  -->
+        <footer>
+            <div class="line__divider">
+                <img src="../images/line-footer.png" alt="Linea divisoria footer" class="line__divider--size">
+            </div>
+            <div class="container-fluid">
+                <div class="row footer__one">
+                    <div class="col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div>
+                            <h6 class="footer__one--copyright">Copyright © 2020 - Agustin Bassi</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div class="footer__one--logo"><img src="../images/logo-footer.svg" alt="Logo Hello IoT"></div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-row align-items-center">
+                            <h6>Follow me!</h6>
+                            <div class="ml-4">
+                                <a href="https://www.linkedin.com/in/agustin-bassi/" target="_blank"><img src="../images/linkedin-cuadrado.svg" alt="Linkedin"></a>
+                                <a href="https://github.com/agustinBassi" target="_blank"><img src="../images/github-cuadrado.svg" alt="Github"></a>
+                                <a href="https://hub.docker.com/u/abassi" target="_blank"><img src="../images/docker.svg" alt="Docker"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer__two">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div>
+                            <a href="https://www.linkedin.com/in/sofia-pennella/"><p>Web Design by <u>Sofia Pennella</u></p></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div>
+                            <p class="footer__two--derechos">Todos los derechos reservados</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                        <div>
+                            <p class="footer__two--imagesBy">Images by Upklyak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+          <!-- jQuery -->
+          <script type="text/javascript" src="../mdb/js/jquery.min.js"></script>
+          <!-- Bootstrap tooltips -->
+          <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+          <!-- Bootstrap core JavaScript -->
+          <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+          <!-- MDB core JavaScript -->
+          <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+          <!-- My custom scripts -->
+          <script type="text/javascript" src="../scripts/scripts.js"></script>
+    </body>
+</html>

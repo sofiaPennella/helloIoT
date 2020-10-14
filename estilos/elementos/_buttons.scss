@@ -1,0 +1,50 @@
+/* ========================================================================= */
+/* Buttons flechas */ 
+/* ========================================================================= */
+
+.button__image {
+    display: block;
+    margin: auto;    
+}
+
+.button__font {
+    font-family: $font-three;
+    font-weight: 500;
+    font-size: 1.5rem; 
+}
+
+div h5.button__margin {
+    margin: auto;
+}
+
+.button__down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+}
+
+.button__up {
+    @extend .button__down;
+    margin: 10rem 0rem 10rem 0rem;      
+}
+
+/* ========================================================================= */
+/* Buttons Bootstrap */ 
+/* ========================================================================= */
+
+button a {
+    font-family: $font-three;
+    color: $blanco;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: $blanco;
+    text-decoration: none;
+}
+
+//Form Button
+ .btn.btn-block {
+     margin: 5vh 0vw 3vh 0vw;
+ }

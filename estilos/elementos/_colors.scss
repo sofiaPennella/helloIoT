@@ -1,0 +1,57 @@
+//Full colors variables
+
+$pink: #E52384;
+$azulado: #5E60CD;
+$cian: #64DEDF;
+$celeste: #49BFE3;
+$violeta: #7401B8;
+$azul: #18246C;
+$blanco: white;
+$negro: black;
+
+/* ========================================================================= */
+/* Background Colors */ 
+/* ========================================================================= */
+
+$gradient: rgb(24,36,108) linear-gradient(0deg, rgba(24,36,108,1) 0%, rgba(67,9,95,1) 49%, rgba(24,36,108,1) 100%);
+
+.gradient {
+    background: $gradient;
+}
+
+
+.bg-pink {
+    background-color: $pink;
+}
+
+.bg-azulado {
+    background-color: $azulado
+}
+
+.bg-cian {
+    background-color: $cian
+}
+
+.bg-celeste {
+    background-color: $celeste
+}
+
+.bg-violeta {
+    background-color: $violeta
+}
+
+.bg-azul {
+    background-color: $azul;
+}
+
+/* ========================================================================= */
+/* Text full colors */ 
+/* ========================================================================= */
+
+.negro {
+    color: $negro;
+}
+
+.blanco {
+    color: $blanco;
+}

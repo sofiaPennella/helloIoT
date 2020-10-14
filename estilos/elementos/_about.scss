@@ -1,0 +1,101 @@
+/* ========================================================================= */
+/* Styles About */ 
+/* ========================================================================= */
+.block__web {
+    margin: 10vh 0vw 0vh 18.5vw;
+}
+
+.block__author {
+    margin: 10vh 18.5vw 0vh 0vw;
+
+    div {
+        float: right;
+        text-align: right;
+
+    }
+
+    h6 {
+            text-align: right;
+    }
+}
+
+.line__divider--short {
+    width: 20vw; 
+       
+}
+
+/* ========================================================================= */
+/* Media Query - About */
+/* ========================================================================= */
+
+@media (max-width: 411px) {
+ 
+    .block__web {
+        margin: 10vh 10vw auto 10vw;
+
+        p {
+            text-align: justify;
+        }
+    }   
+
+    .block__author {
+        margin: 10vh 10vw auto 10vw;
+
+        div {
+            float: left;
+            text-align: left;
+            }
+        
+        p {
+            text-align: justify;
+        }
+    
+        h6 {
+                text-align: left;
+            }
+
+        }
+
+    }
+
+@media (min-width: 412px) and (max-width: 767px) {
+    
+    .block__web {
+        margin: 10vh 10vw auto 10vw;
+
+        p {
+            text-align: justify;
+        }
+    }   
+
+    .block__author {
+        margin: 10vh 10vw auto 10vw;
+
+        div {
+            float: left;
+            text-align: left;
+            }
+
+        p {
+            text-align: justify;
+        }
+
+        h6 {
+            text-align: left;
+        }
+            
+        }
+
+    }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .block__web {
+        margin: 10vh 10vw auto 10vw;
+    }  
+
+    .block__author {
+        margin: 10vh 10vw auto 10vw;
+    }   
+
+}

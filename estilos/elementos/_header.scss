@@ -1,0 +1,54 @@
+/* ========================================================================= */
+/* Header
+/* ========================================================================= */
+
+.header__portrait {
+    height: 80vh;
+    margin: auto;  
+}
+
+.header__portrait--home {
+    @extend .header__portrait;
+    background-image: url(../images/home.png);
+    background-size: cover;
+}
+
+.header__portrait--about {
+    @extend .header__portrait;
+    background-image: url(../images/acerca-de.png);
+    background-size: cover;
+}
+
+.header__portrait--articulos {
+    @extend .header__portrait;
+    background-image: url(../images/articulos.png);
+    background-size: cover;
+}
+
+.header__portrait--proyectos {
+    @extend .header__portrait;
+    background-image: url(../images/proyectos.png);
+    background-size: cover;
+}
+
+.header__portrait--colaborar {
+    @extend .header__portrait;
+    background-image: url(../images/colaborar.png);
+    background-size: cover;
+}
+
+.header__portrait--text {
+    height: 80vh;
+    padding-left: 5vw;
+
+    h1 {
+        text-align: left;
+
+    h4 {
+        text-align: left;
+        
+        }
+
+    }
+  
+}

@@ -1,0 +1,37 @@
+/* ========================================================================= */
+/* Headers Posts
+/* ========================================================================= */
+
+.header__portrait--introduccion {
+    @extend .header__portrait;
+    background-image: url(../images/portada-introduccion.png);
+    background-size: cover;
+}
+
+.header__portrait--instalacion {
+    @extend .header__portrait;
+    background-image: url(../images/portada-instalacion.png);
+    background-size: cover;
+}
+
+.header__portrait--tutoriales {
+    @extend .header__portrait;
+    background-image: url(../images/portada-tutoriales.png);
+    background-size: cover;
+}
+
+.header__portrait--avanzados {
+    @extend .header__portrait;
+    background-image: url(../images/portada-avanzados.png);
+    background-size: cover;
+}
+
+/* ========================================================================= */
+/* Iframe Posts
+/* ========================================================================= */
+
+.iframe__style {
+    margin: auto; 
+    width: 50vw; 
+    height: 450vh;
+}

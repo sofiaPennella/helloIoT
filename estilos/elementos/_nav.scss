@@ -1,0 +1,81 @@
+/* ========================================================================= */
+/* Nav */ 
+/* ========================================================================= */
+.container__nav {
+  background-color: $azul;
+  box-shadow: 0px 57px 61px -50px rgba(10,10,10,1);
+}
+
+nav {
+    background-color: $azul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 11.5rem;  
+    z-index: 10000;
+    
+    a {
+        color: $blanco;
+        text-decoration: none;
+        margin-right: 40px;
+        font-family: $font-three;
+        font-weight: 500;
+        font-size: 1.5rem;
+
+
+        .active {
+            font-weight: 900;
+            }
+
+    }
+   
+}
+
+.navbar .dropdown-menu a {
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: hoverNav;
+            animation-name: hoverNav;
+    color: white;   
+}
+
+@-webkit-keyframes hoverNav {
+    from { 
+      opacity: 0;
+      font-size: 1.5rem;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes hoverNav {
+    from { 
+      opacity: 0;
+      font-size: 1.5rem;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.dropdown {
+  background-color: $azul;
+}
+
+.dropdown-item a {
+  font-family: $font-three;
+  font-size: 1.5rem;
+}
+
+.navbar .dropdown-menu a:hover {
+  color: white;
+  background-color: $azul;
+  animation: none;
+}
+

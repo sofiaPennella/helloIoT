@@ -1,0 +1,67 @@
+//Fonts
+
+$font-one: 'Ubuntu', sans-serif;
+$font-two: 'Nunito', sans-serif;
+$font-three: 'Montserrat', sans-serif;
+
+//Headers
+
+/* ========================================================================= */
+/* Tipography */
+/* ========================================================================= */
+
+h1 {
+    color: $blanco;
+    font-family: $font-one;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin: 0px;
+}
+
+h2 {
+    color: $blanco;
+    font-family: $font-one;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    color: $blanco;
+    font-family: $font-one;
+    font-weight: bold;
+    font-size: 3rem;    
+}
+
+h4 {
+    color: $blanco;
+    font-family: $font-two;
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+h5 {
+    color: $blanco;
+    font-family: $font-two;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h6 {
+    color: $blanco;
+    font-family: $font-one;
+    font-size: 2rem;
+}
+
+p {
+    color: $blanco;
+    font-family: $font-two;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: lighter;
+}
+
+//Titles pages Entradas
+.headings--entradas {
+    margin-left: 18.5vw;
+    margin-top: 10vh;
+}
