@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="keywords" content="IOT, INTERNET-OF-THINGS, RASPBERRY, RP, DOCKER, DOCKER-COMPOSEI, ARDUINO, ESP32, ESP8266, WOT, GATEWAY, OPEN-SOURCE, TUTORIAL">
+        <meta name="description" content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
+        <!-- MDB icon -->
+        <link rel="icon" href="../../images/logo-blanco.png" type="image/x-icon">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="../../mdb/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="../../mdb/css/mdb.min.css">
+        <!-- My custom Styles -->
         <link rel="stylesheet" href="../../estilos/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <!-- Animate -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-        <title>Hello IoT - Introducción a Docker</title>
+        <title>Hello IoT | Introducción a Docker</title>
     </head>
     <body class="gradient">
              <!-- Portrait -->
@@ -62,7 +70,7 @@
                 <div class="row">
                   <div class="col-11 header__portrait--introduccion">
                     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
-                        <div>
+                        <div class="wow fadeInLeft">
                             <h1 class="mb-4">Docker</h1>
                             <h4 class="mt-4 text-wrap">Descubrir el mundo de los contenedores y las partes fundamentales del ecosistema Docker.</h4>
                         </div>
@@ -78,14 +86,13 @@
                     </div> 
                 </div>
             </div>
-            <!-- Post -->
-            <div class="container-fluid">
+            <!-- Post -->  
+            <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                         <!-- 21:9 aspect ratio -->
-                        <div class="d-flex justify-content-center embed-responsive embed-responsive-21by9 iframe__style">
-                            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQVgpQUfQJEcEl9ozV0Q7k-NZjSl02xJ7cQZe0mIzlbCk13yPbFRvGVEk6NUUeH5PCTa5RX7LjConeI/pub?embedded=true" class=" border-0"></iframe>
-                        </div>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <div class="d-flex justify-content-center iframe__style">
+                        <iframe scrolling="no" class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vQVgpQUfQJEcEl9ozV0Q7k-NZjSl02xJ7cQZe0mIzlbCk13yPbFRvGVEk6NUUeH5PCTa5RX7LjConeI/pub?embedded=true" allowfullscreen></iframe>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -118,7 +125,7 @@
                     <div class="row footer__two">
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
                             <div>
-                                <p>Web Design by Sofia Pennella</p>
+                                <a href="https://www.linkedin.com/in/sofia-pennella/"><p>Web Design by <u>Sofia Pennella</u></p></a>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
@@ -134,9 +141,15 @@
                     </div>
                 </div>
             </footer>
-            <!-- Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <!-- jQuery -->
+            <script type="text/javascript" src="../../mdb/js/jquery.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="../../mdb/js/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="../../mdb/js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="../../mdb/js/mdb.min.js"></script>
+            <!-- My custom scripts -->
+            <script type="text/javascript" src="../../scripts/scripts.js"></script>
         </body>
     </html>
