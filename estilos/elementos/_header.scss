@@ -11,30 +11,35 @@
     @extend .header__portrait;
     background-image: url(../images/home.png);
     background-size: cover;
+    margin-top: 8vh;
 }
 
 .header__portrait--about {
     @extend .header__portrait;
     background-image: url(../images/acerca-de.png);
     background-size: cover;
+    margin-top: 8vh;
 }
 
 .header__portrait--articulos {
     @extend .header__portrait;
     background-image: url(../images/articulos.png);
     background-size: cover;
+    margin-top: 8vh;
 }
 
 .header__portrait--proyectos {
     @extend .header__portrait;
     background-image: url(../images/proyectos.png);
     background-size: cover;
+    margin-top: 8vh;
 }
 
 .header__portrait--colaborar {
     @extend .header__portrait;
     background-image: url(../images/colaborar.png);
     background-size: cover;
+    margin-top: 8vh;
 }
 
 .header__portrait--text {
