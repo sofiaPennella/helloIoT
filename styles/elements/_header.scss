@@ -9,35 +9,35 @@
 
 .header__portrait--home {
     @extend .header__portrait;
-    background-image: url(../images/home.png);
+    background-image: url(../images/portrait-home.png);
     background-size: cover;
     margin-top: 8vh;
 }
 
 .header__portrait--about {
     @extend .header__portrait;
-    background-image: url(../images/acerca-de.png);
+    background-image: url(../images/portrait-about.png);
     background-size: cover;
     margin-top: 8vh;
 }
 
 .header__portrait--articulos {
     @extend .header__portrait;
-    background-image: url(../images/articulos.png);
+    background-image: url(../images/portrait-articles.png);
     background-size: cover;
     margin-top: 8vh;
 }
 
 .header__portrait--proyectos {
     @extend .header__portrait;
-    background-image: url(../images/proyectos.png);
+    background-image: url(../images/portrait-projects.png);
     background-size: cover;
     margin-top: 8vh;
 }
 
 .header__portrait--colaborar {
     @extend .header__portrait;
-    background-image: url(../images/colaborar.png);
+    background-image: url(../images/portrait-collaborate.png);
     background-size: cover;
     margin-top: 8vh;
 }
