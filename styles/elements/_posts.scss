@@ -4,25 +4,25 @@
 
 .header__portrait--introduccion {
     @extend .header__portrait;
-    background-image: url(../images/portada-introduccion.png);
+    background-image: url(../images/post-portrait-intro.png);
     background-size: cover;
 }
 
 .header__portrait--instalacion {
     @extend .header__portrait;
-    background-image: url(../images/portada-instalacion.png);
+    background-image: url(../images/portada-carrousel-installation.png);
     background-size: cover;
 }
 
 .header__portrait--tutoriales {
     @extend .header__portrait;
-    background-image: url(../images/portada-tutoriales.png);
+    background-image: url(../images/post-portrait-tutorials.png);
     background-size: cover;
 }
 
 .header__portrait--avanzados {
     @extend .header__portrait;
-    background-image: url(../images/portada-avanzados.png);
+    background-image: url(../images/post-portrait-advanced.png);
     background-size: cover;
 }
 

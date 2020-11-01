@@ -460,12 +460,12 @@ button a:hover {
 }
 
 .imageAbout {
-  background-image: url("../images/card-portrait-about.png");
+  background-image: url("../images/card-about.png");
   background-size: cover;
 }
 
 .imageEntradas {
-  background-image: url("../images/card-portrait-articles.png");
+  background-image: url("../images/card-articles.png");
   background-size: cover;
 }
 
@@ -910,22 +910,22 @@ form :placeholder-shown {
 /* Headers Posts
 /* ========================================================================= */
 .header__portrait--introduccion {
-  background-image: url(../images/portada-introduccion.png);
+  background-image: url(../images/post-portrait-intro.png);
   background-size: cover;
 }
 
 .header__portrait--instalacion {
-  background-image: url(../images/portada-instalacion.png);
+  background-image: url(../images/portada-carrousel-installation.png);
   background-size: cover;
 }
 
 .header__portrait--tutoriales {
-  background-image: url(../images/portada-tutoriales.png);
+  background-image: url(../images/post-portrait-tutorials.png);
   background-size: cover;
 }
 
 .header__portrait--avanzados {
-  background-image: url(../images/portada-avanzados.png);
+  background-image: url(../images/post-portrait-advanced.png);
   background-size: cover;
 }
 
