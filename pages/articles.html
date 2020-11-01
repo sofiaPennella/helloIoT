@@ -1,784 +1,814 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="keywords" content="iot, internet of things, raspberry, rp, docker, docker hub, arduino, esp32, esp8266, wot, gateway, open source, tutorial">
-    <meta name="description" content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
-    <!-- MDB icon -->
-    <link rel="icon" href="../images/logo-nav.png" type="image/x-icon">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../mdb/css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="../mdb/css/mdb.min.css">
-    <!-- My custom Styles -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <title>Hello IoT | Material informativo sobre tecnologías IoT</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords"
+    content="iot, internet of things, raspberry, rp, docker, docker hub, arduino, esp32, esp8266, wot, gateway, open source, tutorial">
+  <meta name="description"
+    content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
+  <!-- MDB icon -->
+  <link rel="icon" href="../images/logo-nav.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../mdb/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../mdb/css/mdb.min.css">
+  <!-- My custom Styles -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <title>Hello IoT | Material informativo sobre tecnologías IoT</title>
 </head>
+
 <body class="gradient">
-    <!-- Nav -->
-    <header>
-      <nav class="navbar navbar-expand-lg z-depth-2 rounded fixed-top">
-        <a class="navbar-brand ml-4" href="../index.html">
-            <img src="../images/logo-nav.png" alt="Logo" loading="lazy" class="ml-4">
-        </a>
-        <button class="navbar-toggler first-button mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-        aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg z-depth-2 rounded fixed-top">
+      <a class="navbar-brand ml-4" href="../index.html">
+        <img src="../images/logo-nav.png" alt="Logo" loading="lazy" class="ml-4">
+      </a>
+      <button class="navbar-toggler first-button mr-2" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false"
+        aria-label="Toggle navigation">
         <div class="animated-icon1"><span></span><span></span><span></span></div>
-        </button>
-        <div class="container-fluid container__nav">
-            <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent20">
-                <ul class="navbar-nav ml-auto mb-4 mt-4 text-left">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">ACERCA DE</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">ARTÍCULOS</a>
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="articles.html#docker">Docker</a>
-                            <a class="dropdown-item" href="articles.html#mqtt">MQTT</a>
-                            <a class="dropdown-item" href="articles.html#wot">Web of Things</a>
-                            <a class="dropdown-item" href="articles.html#bluetooth">Bluetooth y BLE</a>
-                            <a class="dropdown-item" href="articles.html#lora">LoRa</a>
-                            <a class="dropdown-item" href="articles.html#sistemas">Sistemas Embebidos</a>
-                            <a class="dropdown-item" href="articles.html"><strong>VER TODOS</strong> </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="collaborate.html">COLABORAR</a>
-                    </li>
-                </ul>
-            </div>
+      </button>
+      <div class="container-fluid container__nav">
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent20">
+          <ul class="navbar-nav ml-auto mb-4 mt-4 text-left">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ACERCA DE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">ARTÍCULOS</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="articles.html#docker">Docker</a>
+                <a class="dropdown-item" href="articles.html#mqtt">MQTT</a>
+                <a class="dropdown-item" href="articles.html#wot">Web of Things</a>
+                <a class="dropdown-item" href="articles.html#bluetooth">Bluetooth y BLE</a>
+                <a class="dropdown-item" href="articles.html#lora">LoRa</a>
+                <a class="dropdown-item" href="articles.html#sistemas">Sistemas Embebidos</a>
+                <a class="dropdown-item" href="articles.html"><strong>VER TODOS</strong> </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">PROYECTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="collaborate.html">COLABORAR</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <!-- Portrait -->
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-11 header__portrait--articulos">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
-                <div class="wow fadeInLeft">
-                    <h1 class="mb-4">Artículos</h1>
-                    <h4 class="mt-4 text-wrap">Material informativo y tutoriales de tecnologías IoT</h4>
-                </div>
-            </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Portrait -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-11 header__portrait--articulos">
+        <div
+          class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
+          <div class="wow fadeInLeft">
+            <h1 class="mb-4">Artículos</h1>
+            <h4 class="mt-4 text-wrap">Material informativo y tutoriales de tecnologías IoT</h4>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="button__down">
+          <h6 class="button__margin">leer</h6>
+          <a href="#docker"><img src="../images/icon-down.png" alt="Boton bajar"
+              class="button__image animated pulse infinite"></a>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="button__down">
-                    <h6 class="button__margin">leer</h6>
-                    <a href="#docker"><img src="../images/icon-down.png" alt="Boton bajar" class="button__image animated pulse infinite"></a>
-                </div>
-            </div> 
-        </div>
-    </div> 
-    <!-- Sections -->
-    <!-- Docker DESKTOP -->
-    <h3 id="docker" class="headings--entradas">Docker</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div id="carouselDocker" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                    <!-- <ol class="carousel-indicators">
+      </div>
+    </div>
+  </div>
+  <!-- Sections -->
+  <!-- Docker DESKTOP -->
+  <h3 id="docker" class="headings--entradas">Docker</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselDocker" class="carousel slide d-none d-lg-flex" data-ride="carousel" style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
                       <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselDocker" data-slide-to="1"></li>
                     </ol> -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div style="display: flex; flex-direction: row;"> 
-                            <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                                <div class="row no-gutters">
-                                  <div class="col-md-6 gradient">
-                                    <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-4">Introducción a Docker</h5>
-                                      <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Descubrir el mundo de los contenedores y las partes fundamentales del ecosistema Docker.</p>
-                                      <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                                <div class="row no-gutters">
-                                  <div class="col-md-6 gradient">
-                                    <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-4">Instalación Docker & Docker Compose</h5>
-                                      <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configuración e instalación paso a paso de ambas herramientas.</p>
-                                      <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Docker</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Descubrir el mundo de los
+                          contenedores y las partes fundamentales del ecosistema Docker.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
                       </div>
-                      <div class="carousel-item ">
-                        <div style="display: flex; flex-direction: row;"> 
-                          <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                              <div class="row no-gutters">
-                                <div class="col-md-6 gradient">
-                                  <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Apps listas para usar con Docker Compose</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Diferentes aplicaciones listas para usar con Docker Compose.</p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                              <div class="row no-gutters">
-                                <div class="col-md-6 gradient">
-                                  <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>     
-                      </div>
-                    <a class="carousel-control-prev justify-content-start" href="#carouselDocker" role="button" data-slide="prev">
-                      <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next justify-content-end" href="#carouselDocker" role="button" data-slide="next">
-                      <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                      <span class="sr-only">Next</span>
-                    </a>        
+                    </div>
+                  </div>
                 </div>
-              </div>
-          </div>
-        </div>
-    </div>
-    <!-- Docker MOBILE -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselDockerMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                    <div class="row no-gutters">
-                      <div class="col-md-6 gradient">
-                        <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Introducción a Docker</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Descubrir el mundo de los contenedores y las partes fundamentales del ecosistema Docker.</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                        </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Instalación Docker & Docker Compose</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configuración e instalación paso
+                          a paso de ambas herramientas.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Instalación Docker & Docker Compose</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configuración e instalación paso a paso de ambas herramientas.</p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                          </div>
-                        </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Apps listas para usar con Docker Compose</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Diferentes aplicaciones listas
+                          para usar con Docker Compose.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
                       </div>
                     </div>
-                  </div>     
-              </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Apps listas para usar con Docker Compose</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Diferentes aplicaciones listas para usar con Docker Compose.</p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>     
-              </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>     
-              </div>
-              <a class="carousel-control-prev justify-content-start" href="#carouselDockerMobile" role="button" data-slide="prev">
-                <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next justify-content-end" href="#carouselDockerMobile" role="button" data-slide="next">
-                <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-                <span class="sr-only">Next</span>
-              </a>    
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- MQTT DESKTOP -->
-    <h3 id="mqtt" class="headings--entradas">MQTT</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div id="carouselMQTT" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                    <!-- <ol class="carousel-indicators">
-                      <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselDocker" data-slide-to="1"></li>
-                    </ol> -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div style="display: flex; flex-direction: row;"> 
-                            <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                                <div class="row no-gutters">
-                                  <div class="col-md-6 gradient">
-                                    <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a MQTT">
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-4">Introducción a MQTT</h5>
-                                      <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Sumergirse en las partes fundamentales del protocolo MQTT ampliamente utilizando el mundo de Internet de las Cosas.</p>
-                                      <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                                <div class="row no-gutters">
-                                  <div class="col-md-6 gradient">
-                                    <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial de conexión MQTTBox a CloudMQTT">
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="card-body">
-                                          <h5 class="card-title mt-4 mb-4">Tutorial de conexión MQTTBox a CloudMQTT</h5>
-                                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Cómo conectar el cliente MQTTBox al broker de CloudMQTT y probar de manera rápida la conectividad MQTT.</p>
-                                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item ">
-                        <div style="display: flex; flex-direction: row;"> 
-                          <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                              <div class="row no-gutters">
-                                <div class="col-md-6 gradient">
-                                  <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial de conexión Arduino a Mosquitto">
-                                      </div>
-                                      <div class="col-md-6">
-                                        <div class="card-body">
-                                          <h5 class="card-title mt-4 mb-4">Tutorial de conexión Arduino a Mosquitto</h5>
-                                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender a programar un dispositivo Arduino para conectarse al broker MQTT Mosquitto. </p>
-                                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                              <div class="row no-gutters">
-                                <div class="col-md-6 gradient">
-                                  <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>     
-                      </div>
-                    <a class="carousel-control-prev justify-content-start" href="#carouselMQTT" role="button" data-slide="prev">
-                      <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next justify-content-end" href="#carouselMQTT" role="button" data-slide="next">
-                      <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                      <span class="sr-only">Next</span>
-                    </a>        
+                  </div>
                 </div>
-              </div>
-          </div>
-        </div>
-    </div>
-    <!-- MQTT MOBILE -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselMQTTMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                    <div class="row no-gutters">
-                      <div class="col-md-6 gradient">
-                        <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a MQTT">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Introducción a MQTT</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Sumergirse en las partes fundamentales del protocolo MQTT ampliamente utilizando el mundo de Internet de las Cosas.</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                        </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial de conexión MQTTBox a CloudMQTT">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Tutorial de conexión MQTTBox a CloudMQTT</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Cómo conectar el cliente MQTTBox al broker de CloudMQTT y probar de manera rápida la conectividad MQTT.</p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>     
-              </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial de conexión Arduino a Mosquitto">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Tutorial de conexión Arduino a Mosquitto</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender a programar un dispositivo Arduino para conectarse al broker MQTT Mosquitto. </p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>     
-              </div>
-              <div class="carousel-item ">
-                <div style="display: flex; flex-direction: row;"> 
-                  <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                      <div class="row no-gutters">
-                        <div class="col-md-6 gradient">
-                          <img src="../images/carrousel-installation.png" class="card-img" alt="Example Card">
-                        </div>
-                        <div class="col-md-6">
-                          <div class="card-body">
-                            <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                            <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                            <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>     
-              </div>
-              <a class="carousel-control-prev justify-content-start" href="#carouselMQTTMobile" role="button" data-slide="prev">
-                <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next justify-content-end" href="#carouselMQTTMobile" role="button" data-slide="next">
-                <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-                <span class="sr-only">Next</span>
-              </a>    
-             </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselDocker" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselDocker" role="button" data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
     </div>
- <!-- WEB OF THINGS DESKTOP -->
- <h3 id="wot" class="headings--entradas">Web of Things</h3>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-             <div id="carouselWot" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                 <!-- <ol class="carousel-indicators">
+  </div>
+  <!-- Docker MOBILE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselDockerMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Docker</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Descubrir el mundo de los
+                          contenedores y las partes fundamentales del ecosistema Docker.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Instalación Docker & Docker Compose</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configuración e instalación paso
+                          a paso de ambas herramientas.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Apps listas para usar con Docker Compose</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Diferentes aplicaciones listas
+                          para usar con Docker Compose.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselDockerMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselDockerMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MQTT DESKTOP -->
+  <h3 id="mqtt" class="headings--entradas">MQTT</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselMQTT" class="carousel slide d-none d-lg-flex" data-ride="carousel" style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
+                      <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselDocker" data-slide-to="1"></li>
+                    </ol> -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a MQTT">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a MQTT</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Sumergirse en las partes
+                          fundamentales del protocolo MQTT ampliamente utilizando el mundo de Internet de las Cosas.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial de conexión MQTTBox a CloudMQTT">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión MQTTBox a CloudMQTT</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Cómo conectar el cliente MQTTBox
+                          al broker de CloudMQTT y probar de manera rápida la conectividad MQTT.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial de conexión Arduino a Mosquitto">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión Arduino a Mosquitto</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender a programar un
+                          dispositivo Arduino para conectarse al broker MQTT Mosquitto. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselMQTT" role="button" data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselMQTT" role="button" data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MQTT MOBILE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselMQTTMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a MQTT">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a MQTT</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Sumergirse en las partes
+                          fundamentales del protocolo MQTT ampliamente utilizando el mundo de Internet de las Cosas.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial de conexión MQTTBox a CloudMQTT">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión MQTTBox a CloudMQTT</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Cómo conectar el cliente MQTTBox
+                          al broker de CloudMQTT y probar de manera rápida la conectividad MQTT.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial de conexión Arduino a Mosquitto">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión Arduino a Mosquitto</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender a programar un
+                          dispositivo Arduino para conectarse al broker MQTT Mosquitto. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Example Card">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselMQTTMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselMQTTMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- WEB OF THINGS DESKTOP -->
+  <h3 id="wot" class="headings--entradas">Web of Things</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselWot" class="carousel slide d-none d-lg-flex" data-ride="carousel" style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
                    <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
                    <li data-target="#carouselDocker" data-slide-to="1"></li>
                  </ol> -->
-                 <div class="carousel-inner">
-                   <div class="carousel-item active">
-                     <div style="display: flex; flex-direction: row;"> 
-                         <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Web of Things">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <h5 class="card-title mt-4 mb-4">Introducción a Web of Things</h5>
-                                  <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Web of Things es un protocolo para conectar a la web dispositivos a través de las técnicas que le dieron éxito a la WWW.</p>
-                                  <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                           <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-intro.png" class="card-img" alt="Introducción a Mozilla WebThings">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <h5 class="card-title mt-4 mb-4">Introducción a Mozilla WebThings</h5>
-                                  <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender los detalles de implementación de Mozilla WebThings, el proyecto creado por Mozilla Foundation.</p>
-                                  <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                   </div>
-                               </div>
-                             </div>
-                           </div>
-                     </div>
-                   </div>
-                   <div class="carousel-item ">
-                     <div style="display: flex; flex-direction: row;"> 
-                       <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                              <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial para comenzar con Mozilla WebThings">
-                            </div>
-                            <div class="col-md-6">
-                              <div class="card-body">
-                                <h5 class="card-title mt-4 mb-4">Tutorial para comenzar con Mozilla WebThings</h5>
-                                <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Todos los pasos necesarios para configurar el WebThings Gateway en una Raspberry Pi.</p>
-                                <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                               <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>     
-                   </div>
-                 <a class="carousel-control-prev justify-content-start" href="#carouselWot" role="button" data-slide="prev">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                   <span class="sr-only">Previous</span>
-                 </a>
-                 <a class="carousel-control-next justify-content-end" href="#carouselWot" role="button" data-slide="next">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                   <span class="sr-only">Next</span>
-                 </a>        
-             </div>
-           </div>
-       </div>
-     </div>
- </div>
- <!-- WEB OF THINGS MOBILE -->
- <div class="container">
-   <div class="row">
-     <div class="col-12">
-       <div id="carouselWotMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                 <div class="row no-gutters">
-                   <div class="col-md-6 gradient">
-                    <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Web of Things">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Web of Things">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Web of Things</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Web of Things es un protocolo
+                          para conectar a la web dispositivos a través de las técnicas que le dieron éxito a la WWW.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="card-body">
-                      <h5 class="card-title mt-4 mb-4">Introducción a Web of Things</h5>
-                      <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Web of Things es un protocolo para conectar a la web dispositivos a través de las técnicas que le dieron éxito a la WWW.</p>
-                      <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introducción a Mozilla WebThings">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Mozilla WebThings</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender los detalles de
+                          implementación de Mozilla WebThings, el proyecto creado por Mozilla Foundation.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial para comenzar con Mozilla WebThings">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial para comenzar con Mozilla WebThings</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Todos los pasos necesarios para
+                          configurar el WebThings Gateway en una Raspberry Pi.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselWot" role="button" data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselWot" role="button" data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- WEB OF THINGS MOBILE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselWotMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Web of Things">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Web of Things</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Web of Things es un protocolo
+                          para conectar a la web dispositivos a través de las técnicas que le dieron éxito a la WWW.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Mozilla WebThings">
                     </div>
                     <div class="col-md-6">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-4">Introducción a Mozilla WebThings</h5>
-                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender los detalles de implementación de Mozilla WebThings, el proyecto creado por Mozilla Foundation.</p>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Aprender los detalles de
+                          implementación de Mozilla WebThings, el proyecto creado por Mozilla Foundation.</p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
-                      <img src="../images/carrousel-tutorial.png" class="card-img" alt="Tutorial para comenzar con Mozilla WebThings">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img"
+                        alt="Tutorial para comenzar con Mozilla WebThings">
                     </div>
                     <div class="col-md-6">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-4">Tutorial para comenzar con Mozilla WebThings</h5>
-                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Todos los pasos necesarios para configurar el WebThings Gateway en una Raspberry Pi.</p>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Todos los pasos necesarios para
+                          configurar el WebThings Gateway en una Raspberry Pi.</p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
-                       <img src="../images/carrousel-installation.png" class="card-img" alt="Example Card">
-                     </div>
-                     <div class="col-md-6">
-                       <div class="card-body">
-                         <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                         <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a href="posts/docker/docker-intro.html">Leer más</a></button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <a class="carousel-control-prev justify-content-start" href="#carouselWotMobile" role="button" data-slide="prev">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next justify-content-end" href="#carouselWotMobile" role="button" data-slide="next">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-             <span class="sr-only">Next</span>
-           </a>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Example Card">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4"><a
+                            href="posts/docker/docker-intro.html">Leer más</a></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselWotMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselWotMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- BLUETOOTH & BLE DESKTOP -->
- <h3 id="bluetooth" class="headings--entradas">Bluetooth & BLE</h3>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-             <div id="carouselBluetooth" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                 <!-- <ol class="carousel-indicators">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BLUETOOTH & BLE DESKTOP -->
+  <h3 id="bluetooth" class="headings--entradas">Bluetooth & BLE</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselBluetooth" class="carousel slide d-none d-lg-flex" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
                    <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
                    <li data-target="#carouselDocker" data-slide-to="1"></li>
                  </ol> -->
-                 <div class="carousel-inner">
-                   <div class="carousel-item active">
-                     <div style="display: flex; flex-direction: row;"> 
-                         <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-intro.png" class="card-img" alt="Introducción a Bluetooth, BLE & Beacons">
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="card-body">
-                                      <h5 class="card-title mt-4 mb-4">Introducción a Bluetooth, BLE & Beacons</h5>
-                                      <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Introducirse al protocolo Bluetooth, sus tipos de conexiones y versiones. </p>
-                                      <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                               </div>
-                             </div>
-                           </div>
-                           <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                  <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                  <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                   </div>
-                               </div>
-                             </div>
-                           </div>
-                     </div>
-                   </div>
-                   <div class="carousel-item ">
-                     <div style="display: flex; flex-direction: row;"> 
-                       <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                              <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                               <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>     
-                   </div>
-                 <a class="carousel-control-prev justify-content-start" href="#carouselBluetooth" role="button" data-slide="prev">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                   <span class="sr-only">Previous</span>
-                 </a>
-                 <a class="carousel-control-next justify-content-end" href="#carouselBluetooth" role="button" data-slide="next">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                   <span class="sr-only">Next</span>
-                 </a>        
-             </div>
-           </div>
-       </div>
-     </div>
- </div>
- <!-- BLUETOOTH & BLE MOBILE -->
- <div class="container">
-   <div class="row">
-     <div class="col-12">
-       <div id="carouselBluetoothMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                 <div class="row no-gutters">
-                   <div class="col-md-6 gradient">
-                    <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img"
+                        alt="Introducción a Bluetooth, BLE & Beacons">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Bluetooth, BLE & Beacons</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Introducirse al protocolo
+                          Bluetooth, sus tipos de conexiones y versiones. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Introducción a Bluetooth, BLE & Beacons</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Introducirse al protocolo Bluetooth, sus tipos de conexiones y versiones. </p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselBluetooth" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselBluetooth" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BLUETOOTH & BLE MOBILE -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselBluetoothMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a Bluetooth, BLE & Beacons</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Introducirse al protocolo
+                          Bluetooth, sus tipos de conexiones y versiones. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                        </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
-                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
                     </div>
                     <div class="col-md-6">
@@ -786,178 +816,206 @@
                         <h5 class="card-title mt-4 mb-4">Title Card</h5>
                         <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <a class="carousel-control-prev justify-content-start" href="#carouselBluetoothMobile" role="button" data-slide="prev">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next justify-content-end" href="#carouselBluetoothMobile" role="button" data-slide="next">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-             <span class="sr-only">Next</span>
-           </a>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselBluetoothMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselBluetoothMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- LoRa DESKTOP -->
- <h3 id="lora" class="headings--entradas">LoRa</h3>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-             <div id="carousellora" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                 <!-- <ol class="carousel-indicators">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- LoRa DESKTOP -->
+  <h3 id="lora" class="headings--entradas">LoRa</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carousellora" class="carousel slide d-none d-lg-flex" data-ride="carousel" style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
                    <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
                    <li data-target="#carouselDocker" data-slide-to="1"></li>
                  </ol> -->
-                 <div class="carousel-inner">
-                   <div class="carousel-item active">
-                     <div style="display: flex; flex-direction: row;"> 
-                         <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
-                              </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Introducción a LoRa y LoRaWAN</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Entender cómo funciona el protocolo LoRa y diferenciarlo de LoRaWAN. Ver los actores principales de funcionamiento. </p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                               </div>
-                             </div>
-                           </div>
-                           <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Tutorial de conexión mDOT a gateway LoRaWAN</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configurar el gateway LoRAWAN Conduit y conectar el dispositivo mDOT al gateway para enviar/recibir paquetes LoRaWAN.</p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                               </div>
-                             </div>
-                           </div>
-                     </div>
-                   </div>
-                   <div class="carousel-item ">
-                     <div style="display: flex; flex-direction: row;"> 
-                       <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                              <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                               <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>     
-                   </div>
-                 <a class="carousel-control-prev justify-content-start" href="#carousellora" role="button" data-slide="prev">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                   <span class="sr-only">Previous</span>
-                 </a>
-                 <a class="carousel-control-next justify-content-end" href="#carousellora" role="button" data-slide="next">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                   <span class="sr-only">Next</span>
-                 </a>        
-             </div>
-           </div>
-       </div>
-     </div>
- </div>
- <!-- LoRa Mobile -->
- <div class="container">
-   <div class="row">
-     <div class="col-12">
-       <div id="carouselloraMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                 <div class="row no-gutters">
-                   <div class="col-md-6 gradient">
-                    <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a LoRa y LoRaWAN</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Entender cómo funciona el
+                          protocolo LoRa y diferenciarlo de LoRaWAN. Ver los actores principales de funcionamiento. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Introducción a LoRa y LoRaWAN</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Entender cómo funciona el protocolo LoRa y diferenciarlo de LoRaWAN. Ver los actores principales de funcionamiento. </p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                      </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión mDOT a gateway LoRaWAN</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configurar el gateway LoRAWAN
+                          Conduit y conectar el dispositivo mDOT al gateway para enviar/recibir paquetes LoRaWAN.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Tutorial de conexión mDOT a gateway LoRaWAN</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configurar el gateway LoRAWAN Conduit y conectar el dispositivo mDOT al gateway para enviar/recibir paquetes LoRaWAN.</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                        </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carousellora" role="button" data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carousellora" role="button" data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- LoRa Mobile -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselloraMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Introducción a LoRa y LoRaWAN</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Entender cómo funciona el
+                          protocolo LoRa y diferenciarlo de LoRaWAN. Ver los actores principales de funcionamiento. </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-tutorial.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Tutorial de conexión mDOT a gateway LoRaWAN</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Configurar el gateway LoRAWAN
+                          Conduit y conectar el dispositivo mDOT al gateway para enviar/recibir paquetes LoRaWAN.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
                     </div>
                     <div class="col-md-6">
@@ -965,178 +1023,193 @@
                         <h5 class="card-title mt-4 mb-4">Title Card</h5>
                         <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <a class="carousel-control-prev justify-content-start" href="#carouselloraMobile" role="button" data-slide="prev">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next justify-content-end" href="#carouselloraMobile" role="button" data-slide="next">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-             <span class="sr-only">Next</span>
-           </a>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselloraMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselloraMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-       </div>
-     </div>
-   </div>
- </div>
- <!-- Sistemas Embebidos DESKTOP -->
- <h3 id="sistemas" class="headings--entradas">Sistemas Embebidos</h3>
- <div class="container">
-     <div class="row">
-         <div class="col-12">
-             <div id="carouselEmbeddedSystems" class="carousel slide d-none d-lg-flex" data-ride="carousel"  style="margin-top: 5vh;">
-                 <!-- <ol class="carousel-indicators">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sistemas Embebidos DESKTOP -->
+  <h3 id="sistemas" class="headings--entradas">Sistemas Embebidos</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselEmbeddedSystems" class="carousel slide d-none d-lg-flex" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <!-- <ol class="carousel-indicators">
                    <li data-target="#carouselDocker" data-slide-to="0" class="active"></li>
                    <li data-target="#carouselDocker" data-slide-to="1"></li>
                  </ol> -->
-                 <div class="carousel-inner">
-                   <div class="carousel-item active">
-                     <div style="display: flex; flex-direction: row;"> 
-                         <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title mt-4 mb-4">Instalación PlatformIO en VS Code</h5>
-                                    <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Guía paso a paso para configurar la plataforma de desarrollo de sistemas embebidos PlatformIO dentro de Visual Studio Code. </p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                               </div>
-                             </div>
-                           </div>
-                           <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                             <div class="row no-gutters">
-                               <div class="col-md-6 gradient">
-                                <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                                </div>
-                                <div class="col-md-6">
-                                  <div class="card-body">
-                                    <h5 class="card-title  mt-4 mb-4">Instalación de Raspberry Pi OS</h5>
-                                    <p class="card-text mt-4 text-dark" style="font-size: 1.5rem;">Configurar e instalar  adecuadamente el sistema operativo en una Raspberry Pi.</p>
-                                    <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                  </div>
-                               </div>
-                             </div>
-                           </div>
-                     </div>
-                   </div>
-                   <div class="carousel-item ">
-                     <div style="display: flex; flex-direction: row;"> 
-                       <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                              <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
-                           <div class="row no-gutters">
-                             <div class="col-md-6 gradient">
-                               <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
-                             </div>
-                             <div class="col-md-6">
-                               <div class="card-body">
-                                 <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                                 <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
-                                 <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>     
-                   </div>
-                 <a class="carousel-control-prev justify-content-start" href="#carouselEmbeddedSystems" role="button" data-slide="prev">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg" alt="Prev"></span>
-                   <span class="sr-only">Previous</span>
-                 </a>
-                 <a class="carousel-control-next justify-content-end" href="#carouselEmbeddedSystems" role="button" data-slide="next">
-                   <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
-                   <span class="sr-only">Next</span>
-                 </a>        
-             </div>
-           </div>
-       </div>
-     </div>
- </div>
- <!-- Sistemas Embebidos Mobile -->
- <div class="container">
-   <div class="row">
-     <div class="col-12">
-       <div id="carouselEmbeddedSystemsMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"  style="margin-top: 5vh;">
-         <div class="carousel-inner">
-           <div class="carousel-item active">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                 <div class="row no-gutters">
-                   <div class="col-md-6 gradient">
-                    <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
                     </div>
                     <div class="col-md-6">
                       <div class="card-body">
                         <h5 class="card-title mt-4 mb-4">Instalación PlatformIO en VS Code</h5>
-                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Guía paso a paso para configurar la plataforma de desarrollo de sistemas embebidos PlatformIO dentro de Visual Studio Code. </p>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Guía paso a paso para configurar
+                          la plataforma de desarrollo de sistemas embebidos PlatformIO dentro de Visual Studio Code.
+                        </p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title  mt-4 mb-4">Instalación de Raspberry Pi OS</h5>
+                        <p class="card-text mt-4 text-dark" style="font-size: 1.5rem;">Configurar e instalar
+                          adecuadamente el sistema operativo en una Raspberry Pi.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title  mt-4 mb-4">Instalación de Raspberry Pi OS</h5>
-                          <p class="card-text mt-4 text-dark" style="font-size: 1.5rem;">Configurar e instalar  adecuadamente el sistema operativo en una Raspberry Pi.</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                        </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
-                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 mr-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
                       </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title mt-4 mb-4">Title Card</h5>
-                          <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
-                          <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <div class="carousel-item ">
-             <div style="display: flex; flex-direction: row;"> 
-               <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
-                   <div class="row no-gutters">
-                     <div class="col-md-6 gradient">
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3 ml-4 border-0 shadow-lg p-0" style="width: 80vw;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselEmbeddedSystems" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselEmbeddedSystems" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-next.svg" alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sistemas Embebidos Mobile -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="carouselEmbeddedSystemsMobile" class="carousel slide d-flex d-lg-none" data-ride="carousel"
+          style="margin-top: 5vh;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Instalación PlatformIO en VS Code</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Guía paso a paso para configurar
+                          la plataforma de desarrollo de sistemas embebidos PlatformIO dentro de Visual Studio Code.
+                        </p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-installation.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title  mt-4 mb-4">Instalación de Raspberry Pi OS</h5>
+                        <p class="card-text mt-4 text-dark" style="font-size: 1.5rem;">Configurar e instalar
+                          adecuadamente el sistema operativo en una Raspberry Pi.</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
                       <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
                     </div>
                     <div class="col-md-6">
@@ -1144,70 +1217,97 @@
                         <h5 class="card-title mt-4 mb-4">Title Card</h5>
                         <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
                         <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>     
-           </div>
-           <a class="carousel-control-prev justify-content-start" href="#carouselEmbeddedSystemsMobile" role="button" data-slide="prev">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg" alt="Prev"></span>
-             <span class="sr-only">Previous</span>
-           </a>
-           <a class="carousel-control-next justify-content-end" href="#carouselEmbeddedSystemsMobile" role="button" data-slide="next">
-             <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg" alt="Next"></span>
-             <span class="sr-only">Next</span>
-           </a>    
-          </div>
-       </div>
-     </div>
-   </div>
- </div>
-<!-- Footer con Boostrap  -->
-<footer>
-<div class="line__divider">
-    <img src="../images/line-footer.png" alt="Linea divisoria footer" class="line__divider--size">
-</div>
-<div class="container-fluid">
-    <div class="row footer__one">
-        <div class="col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div>
-                <h6 class="footer__one--copyright">Copyright © 2020 - Agustin Bassi</h6>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div class="footer__one--logo"><img src="../images/logo-footer.svg" alt="Logo Hello IoT"></div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div class="d-flex flex-row align-items-center">
-                <h6>Follow me!</h6>
-                <div class="ml-4">
-                    <a href="https://www.linkedin.com/in/agustin-bassi/" target="_blank"><img src="../images/icon-linkedin.svg" alt="Linkedin"></a>
-                    <a href="https://github.com/agustinBassi" target="_blank"><img src="../images/icon-github.svg" alt="Github"></a>
-                    <a href="https://hub.docker.com/u/abassi" target="_blank"><img src="../images/icon-docker.svg" alt="Docker"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="carousel-item ">
+              <div style="display: flex; flex-direction: row;">
+                <div class="card mb-3 border-0 shadow-lg p-0" style="width: 80vw; margin: auto;">
+                  <div class="row no-gutters">
+                    <div class="col-md-6 gradient">
+                      <img src="../images/carrousel-intro.png" class="card-img" alt="Introduccion a Docker">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <h5 class="card-title mt-4 mb-4">Title Card</h5>
+                        <p class="card-text text-dark mt-4" style="font-size: 1.5rem;">Text Card</p>
+                        <button type="button" class="btn btn-lg btn-info font cardButton shadow mt-4">Leer más</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#carouselEmbeddedSystemsMobile" role="button"
+              data-slide="prev">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-previous.svg"
+                  alt="Prev"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#carouselEmbeddedSystemsMobile" role="button"
+              data-slide="next">
+              <span class="carousel-control" aria-hidden="true"><img src="../images/icon-mobile-next.svg"
+                  alt="Next"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="row footer__two">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div>
-              <a href="https://www.linkedin.com/in/sofia-pennella/"><p>Web Design by <u>Sofia Pennella</u></p></a>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div>
-                <p class="footer__two--derechos">Todos los derechos reservados</p>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-            <div>
-                <p class="footer__two--imagesBy">Images by Upklyak</p>
-            </div>
-        </div>
+  </div>
+  <!-- Footer con Boostrap  -->
+  <footer>
+    <div class="line__divider">
+      <img src="../images/line-footer.png" alt="Linea divisoria footer" class="line__divider--size">
     </div>
-</div>
-</footer>
+    <div class="container-fluid">
+      <div class="row footer__one">
+        <div class="col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <h6 class="footer__one--copyright">Copyright © 2020 - Agustin Bassi</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div class="footer__one--logo"><img src="../images/logo-footer.svg" alt="Logo Hello IoT"></div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div class="d-flex flex-row align-items-center">
+            <h6>Follow me!</h6>
+            <div class="ml-4">
+              <a href="https://www.linkedin.com/in/agustin-bassi/" target="_blank"><img
+                  src="../images/icon-linkedin.svg" alt="Linkedin"></a>
+              <a href="https://github.com/agustinBassi" target="_blank"><img src="../images/icon-github.svg"
+                  alt="Github"></a>
+              <a href="https://hub.docker.com/u/abassi" target="_blank"><img src="../images/icon-docker.svg"
+                  alt="Docker"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__two">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <a href="https://www.linkedin.com/in/sofia-pennella/">
+              <p>Web Design by <u>Sofia Pennella</u></p>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <p class="footer__two--derechos">Todos los derechos reservados</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <p class="footer__two--imagesBy">Images by Upklyak</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- jQuery -->
   <script type="text/javascript" src="../mdb/js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -1219,4 +1319,5 @@
   <!-- My custom scripts -->
   <script type="text/javascript" src="../scripts/animations.js"></script>
 </body>
+
 </html>

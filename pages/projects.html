@@ -1,258 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="keywords" content="iot, internet of things, raspberry, rp, docker, docker hub, arduino, esp32, esp8266, wot, gateway, open source, tutorial">
-    <meta name="description" content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
-    <!-- MDB icon -->
-    <link rel="icon" href="../images/logo-nav.png" type="image/x-icon">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../mdb/css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="../mdb/css/mdb.min.css">
-    <!-- My custom Styles -->
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <title>Hello IoT | Repositorios de código abierto</title>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords"
+    content="iot, internet of things, raspberry, rp, docker, docker hub, arduino, esp32, esp8266, wot, gateway, open source, tutorial">
+  <meta name="description"
+    content="Información y tutoriales sobre Internet de las Cosas. Repositorios de código abierto listos para utilizar.">
+  <!-- MDB icon -->
+  <link rel="icon" href="../images/logo-nav.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../mdb/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../mdb/css/mdb.min.css">
+  <!-- My custom Styles -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <title>Hello IoT | Repositorios de código abierto</title>
 </head>
+
 <body class="gradient">
-    <!-- Nav -->
-            <header>
-                <nav class="navbar navbar-expand-lg z-depth-2 rounded fixed-top">
-                    <a class="navbar-brand ml-4" href="../index.html">
-                        <img src="../images/logo-nav.png" alt="Logo" loading="lazy" class="ml-4">
-                    </a>
-                    <button class="navbar-toggler first-button mr-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-                    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon1"><span></span><span></span><span></span></div>
-                    </button>
-                    <div class="container-fluid container__nav">
-                        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent20">
-                            <ul class="navbar-nav ml-auto mb-4 mt-4 text-left">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html">ACERCA DE</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">ARTÍCULOS</a>
-                                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="articles.html#docker">Docker</a>
-                                        <a class="dropdown-item" href="articles.html#mqtt">MQTT</a>
-                                        <a class="dropdown-item" href="articles.html#wot">Web of Things</a>
-                                        <a class="dropdown-item" href="articles.html#bluetooth">Bluetooth y BLE</a>
-                                        <a class="dropdown-item" href="articles.html#lora">LoRa</a>
-                                        <a class="dropdown-item" href="articles.html#sistemas">Sistemas Embebidos</a>
-                                        <a class="dropdown-item" href="articles.html"><strong>VER TODOS</strong> </a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="projects.html">PROYECTOS</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="collaborate.html">COLABORAR</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-             <!-- Portrait -->
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-11 header__portrait--proyectos">
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
-                        <div class="wow fadeInLeft">
-                            <h1 class="mb-4">Proyectos</h1>
-                            <h4 class="mt-4 text-wrap">Repositorios de código abierto listos para utilizar</h4>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="button__down">
-                            <h6 class="button__margin">explorar</h6>
-                            <a href="#cards-projects"><img src="../images/icon-down.png" alt="Boton bajar" class="button__image animated pulse infinite"></a>
-                        </div>
-                    </div> 
-                </div>
-            </div> 
-        <!-- Projects -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card-deck" style="margin-top: 10vh;">
-                        <div class="card z-depth-4 border-0 wow slideInLeft" id="cards-projects">
-                          <div class="card-body ">
-                            <h5 class="text-dark font-weight-bold">Embedded Coap Server</h5>
-                            <p class="text-dark font-weight-normal">CoAP server for embedded devices like ESP32, ESP8266 and other boards</p>
-                            <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/embedded-coap-server">Abrir</a></button>
-                          </div>
-                          <div class="card-footer bg-pink">
-                            <large class="text-white font-weight-bold">C++</large>
-                          </div>
-                        </div>
-                        <div class="card z-depth-4 border-0 wow slideInUp">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">Wot Connection</h5>
-                              <p class="text-dark font-weight-normal">Open source Web of Things Protocol platform for IoT Projects</p>
-                              <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/wot-connection">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-pink">
-                              <large class="text-white font-weight-bold">C++</large>
-                            </div>
-                          </div>
-                          <div class="card z-depth-4 border-0 wow slideInRight">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">BLE Connection</h5>
-                              <p class="text-dark font-weight-normal">Open source Bluetooth LE platform for IoT Projects</p>
-                              <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/ble-connection">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-azulado">
-                              <large class="text-white font-weight-bold">Phyton</large>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card-deck" style="margin-top: 3vh;">
-                        <div class="card z-depth-4 border-0 wow flipInX">
-                          <div class="card-body">
-                            <h5 class="text-dark font-weight-bold">MQ Connection</h5>
-                            <p class="text-dark font-weight-normal">Open source MQTT platform for IoT projects</p>
-                            <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/mq-connection">Abrir</a></button>
-                          </div>
-                          <div class="card-footer bg-pink">
-                            <large class="text-white font-weight-bold">C++</large>
-                          </div>
-                        </div>
-                        <div class="card z-depth-4 border-0 wow flipInX">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">Full Flask Api</h5>
-                              <p class="text-dark font-weight-normal">Full Flask API with DB capabilities feature, unit test workspace, documented API, standalone or Dockerized with excellent documentation</p>
-                              <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/full-flask-api">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-azulado">
-                              <large class="text-white font-weight-bold">Phyton</large>
-                            </div>
-                          </div>
-                          <div class="card z-depth-4 border-0 wow flipInX">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">Simple Flask Api</h5>
-                              <p class="text-dark font-weight-normal">Really simple & fast to use Flask API standalone or Dockerized with excellent documentation</p>
-                              <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/simple-flask-api">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-azulado">
-                              <large class="text-white font-weight-bold">Phyton</large>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card-deck" style="margin-top: 3vh;">
-                        <div class="card z-depth-4 border-0 wow slideInUp">
-                          <div class="card-body">
-                            <h5 class="text-dark font-weight-bold">MantOS</h5>
-                            <p class="text-dark font-weight-normal">Ultra-light Real Time Operating System for ARM Cortex-M processors</p>
-                            <button type="button" class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/mantOS">Abrir</a></button>
-                          </div>
-                          <div class="card-footer bg-cian">
-                            <large class="text-white font-weight-bold">C</large>
-                          </div>
-                        </div>
-                        <div class="card z-depth-4 border-0 wow slideInUp">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">PY GDocs Links Fixer</h5>
-                              <p class="text-dark font-weight-normal">Python tool for avoid "Redirect Notice" in Google Docs links when export it as PDF or HTML format</p>
-                              <button type="button"  class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/py-gdocs-links-fixer">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-azulado">
-                              <large class="text-white font-weight-bold">Phyton</large>
-                            </div>
-                          </div>
-                          <div class="card z-depth-4 border-0 wow slideInUp">
-                            <div class="card-body">
-                              <h5 class="text-dark font-weight-bold">PY DSP Controller</h5>
-                              <p class="text-dark font-weight-normal">Python Digital Audio Signal Processor working with MVC design pattern</p>
-                              <button type="button"  class="btn btn-info btn-lg"><a target="_blank" href="https://github.com/agustinBassi/py-dsp-controller">Abrir</a></button>
-                            </div>
-                            <div class="card-footer bg-azulado">
-                              <large class="text-white font-weight-bold">Phyton</large>
-                            </div>
-                          </div>
-                      </div>
-                </div>
-            </div>
+  <!-- Nav -->
+  <header>
+    <nav class="navbar navbar-expand-lg z-depth-2 rounded fixed-top">
+      <a class="navbar-brand ml-4" href="../index.html">
+        <img src="../images/logo-nav.png" alt="Logo" loading="lazy" class="ml-4">
+      </a>
+      <button class="navbar-toggler first-button mr-2" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent20" aria-controls="navbarSupportedContent20" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="animated-icon1"><span></span><span></span><span></span></div>
+      </button>
+      <div class="container-fluid container__nav">
+        <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent20">
+          <ul class="navbar-nav ml-auto mb-4 mt-4 text-left">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ACERCA DE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">ARTÍCULOS</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="articles.html#docker">Docker</a>
+                <a class="dropdown-item" href="articles.html#mqtt">MQTT</a>
+                <a class="dropdown-item" href="articles.html#wot">Web of Things</a>
+                <a class="dropdown-item" href="articles.html#bluetooth">Bluetooth y BLE</a>
+                <a class="dropdown-item" href="articles.html#lora">LoRa</a>
+                <a class="dropdown-item" href="articles.html#sistemas">Sistemas Embebidos</a>
+                <a class="dropdown-item" href="articles.html"><strong>VER TODOS</strong> </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">PROYECTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="collaborate.html">COLABORAR</a>
+            </li>
+          </ul>
         </div>
-         <!-- Footer con Boostrap  -->
-         <footer>
-          <div class="line__divider">
-              <img src="../images/line-footer.png" alt="Linea divisoria footer" class="line__divider--size">
+      </div>
+    </nav>
+  </header>
+  <!-- Portrait -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-11 header__portrait--proyectos">
+        <div
+          class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex justify-content-center align-items-center flex-column header__portrait--text">
+          <div class="wow fadeInLeft">
+            <h1 class="mb-4">Proyectos</h1>
+            <h4 class="mt-4 text-wrap">Repositorios de código abierto listos para utilizar</h4>
           </div>
-          <div class="container-fluid">
-              <div class="row footer__one">
-                  <div class="col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div>
-                          <h6 class="footer__one--copyright">Copyright © 2020 - Agustin Bassi</h6>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div class="footer__one--logo"><img src="../images/logo-footer.svg" alt="Logo Hello IoT"></div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div class="d-flex flex-row align-items-center">
-                          <h6>Follow me!</h6>
-                          <div class="ml-4">
-                              <a href="https://www.linkedin.com/in/agustin-bassi/" target="_blank"><img src="../images/icon-linkedin.svg" alt="Linkedin"></a>
-                              <a href="https://github.com/agustinBassi" target="_blank"><img src="../images/icon-github.svg" alt="Github"></a>
-                              <a href="https://hub.docker.com/u/abassi" target="_blank"><img src="../images/icon-docker.svg" alt="Docker"></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row footer__two">
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div>
-                        <a href="https://www.linkedin.com/in/sofia-pennella/"><p>Web Design by <u>Sofia Pennella</u></p></a>
-                      </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div>
-                          <p class="footer__two--derechos">Todos los derechos reservados</p>
-                      </div>
-                  </div>
-                  <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
-                      <div>
-                          <p class="footer__two--imagesBy">Images by Upklyak</p>
-                      </div>
-                  </div>
-              </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="button__down">
+          <h6 class="button__margin">explorar</h6>
+          <a href="#cards-projects"><img src="../images/icon-down.png" alt="Boton bajar"
+              class="button__image animated pulse infinite"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projects -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card-deck" style="margin-top: 10vh;">
+          <div class="card z-depth-4 border-0 wow slideInLeft" id="cards-projects">
+            <div class="card-body ">
+              <h5 class="text-dark font-weight-bold">Embedded Coap Server</h5>
+              <p class="text-dark font-weight-normal">CoAP server for embedded devices like ESP32, ESP8266 and other
+                boards</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/embedded-coap-server">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-pink">
+              <large class="text-white font-weight-bold">C++</large>
+            </div>
           </div>
-      </footer>
-         <!-- jQuery -->
-         <script type="text/javascript" src="../mdb/js/jquery.min.js"></script>
-         <!-- Bootstrap tooltips -->
-         <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
-         <!-- Bootstrap core JavaScript -->
-         <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
-         <!-- MDB core JavaScript -->
-         <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
-         <!-- My custom scripts -->
-         <script type="text/javascript" src="../scripts/animations.js"></script>
-    </body>
+          <div class="card z-depth-4 border-0 wow slideInUp">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">Wot Connection</h5>
+              <p class="text-dark font-weight-normal">Open source Web of Things Protocol platform for IoT Projects</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/wot-connection">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-pink">
+              <large class="text-white font-weight-bold">C++</large>
+            </div>
+          </div>
+          <div class="card z-depth-4 border-0 wow slideInRight">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">BLE Connection</h5>
+              <p class="text-dark font-weight-normal">Open source Bluetooth LE platform for IoT Projects</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/ble-connection">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-azulado">
+              <large class="text-white font-weight-bold">Phyton</large>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card-deck" style="margin-top: 3vh;">
+          <div class="card z-depth-4 border-0 wow flipInX">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">MQ Connection</h5>
+              <p class="text-dark font-weight-normal">Open source MQTT platform for IoT projects</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/mq-connection">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-pink">
+              <large class="text-white font-weight-bold">C++</large>
+            </div>
+          </div>
+          <div class="card z-depth-4 border-0 wow flipInX">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">Full Flask Api</h5>
+              <p class="text-dark font-weight-normal">Full Flask API with DB capabilities feature, unit test workspace,
+                documented API, standalone or Dockerized with excellent documentation</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/full-flask-api">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-azulado">
+              <large class="text-white font-weight-bold">Phyton</large>
+            </div>
+          </div>
+          <div class="card z-depth-4 border-0 wow flipInX">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">Simple Flask Api</h5>
+              <p class="text-dark font-weight-normal">Really simple & fast to use Flask API standalone or Dockerized
+                with excellent documentation</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/simple-flask-api">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-azulado">
+              <large class="text-white font-weight-bold">Phyton</large>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card-deck" style="margin-top: 3vh;">
+          <div class="card z-depth-4 border-0 wow slideInUp">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">MantOS</h5>
+              <p class="text-dark font-weight-normal">Ultra-light Real Time Operating System for ARM Cortex-M processors
+              </p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/mantOS">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-cian">
+              <large class="text-white font-weight-bold">C</large>
+            </div>
+          </div>
+          <div class="card z-depth-4 border-0 wow slideInUp">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">PY GDocs Links Fixer</h5>
+              <p class="text-dark font-weight-normal">Python tool for avoid "Redirect Notice" in Google Docs links when
+                export it as PDF or HTML format</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/py-gdocs-links-fixer">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-azulado">
+              <large class="text-white font-weight-bold">Phyton</large>
+            </div>
+          </div>
+          <div class="card z-depth-4 border-0 wow slideInUp">
+            <div class="card-body">
+              <h5 class="text-dark font-weight-bold">PY DSP Controller</h5>
+              <p class="text-dark font-weight-normal">Python Digital Audio Signal Processor working with MVC design
+                pattern</p>
+              <button type="button" class="btn btn-info btn-lg"><a target="_blank"
+                  href="https://github.com/agustinBassi/py-dsp-controller">Abrir</a></button>
+            </div>
+            <div class="card-footer bg-azulado">
+              <large class="text-white font-weight-bold">Phyton</large>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer con Boostrap  -->
+  <footer>
+    <div class="line__divider">
+      <img src="../images/line-footer.png" alt="Linea divisoria footer" class="line__divider--size">
+    </div>
+    <div class="container-fluid">
+      <div class="row footer__one">
+        <div class="col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <h6 class="footer__one--copyright">Copyright © 2020 - Agustin Bassi</h6>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div class="footer__one--logo"><img src="../images/logo-footer.svg" alt="Logo Hello IoT"></div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div class="d-flex flex-row align-items-center">
+            <h6>Follow me!</h6>
+            <div class="ml-4">
+              <a href="https://www.linkedin.com/in/agustin-bassi/" target="_blank"><img
+                  src="../images/icon-linkedin.svg" alt="Linkedin"></a>
+              <a href="https://github.com/agustinBassi" target="_blank"><img src="../images/icon-github.svg"
+                  alt="Github"></a>
+              <a href="https://hub.docker.com/u/abassi" target="_blank"><img src="../images/icon-docker.svg"
+                  alt="Docker"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row footer__two">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <a href="https://www.linkedin.com/in/sofia-pennella/">
+              <p>Web Design by <u>Sofia Pennella</u></p>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <p class="footer__two--derechos">Todos los derechos reservados</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+          <div>
+            <p class="footer__two--imagesBy">Images by Upklyak</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="../mdb/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../mdb/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../mdb/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../mdb/js/mdb.min.js"></script>
+  <!-- My custom scripts -->
+  <script type="text/javascript" src="../scripts/animations.js"></script>
+</body>
+
 </html>
