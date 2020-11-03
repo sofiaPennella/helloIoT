@@ -94,6 +94,14 @@ p {
   font-weight: lighter;
 }
 
+.p--about {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: lighter;
+}
+
 .headings--entradas {
   margin-left: 18.5vw;
   margin-top: 10vh;
@@ -857,8 +865,9 @@ form :placeholder-shown {
   .block__web {
     margin: 10vh 10vw auto 10vw;
   }
-  .block__web p {
+  .block__web .p--about {
     text-align: justify;
+    font-size: 1.6rem;
   }
   .block__author {
     margin: 10vh 10vw auto 10vw;
@@ -867,8 +876,9 @@ form :placeholder-shown {
     float: left;
     text-align: left;
   }
-  .block__author p {
+  .block__author .p--about {
     text-align: justify;
+    font-size: 1.6rem;
   }
   .block__author h6 {
     text-align: left;
@@ -879,8 +889,9 @@ form :placeholder-shown {
   .block__web {
     margin: 10vh 10vw auto 10vw;
   }
-  .block__web p {
+  .block__web .p--about {
     text-align: justify;
+    font-size: 1.6rem;
   }
   .block__author {
     margin: 10vh 10vw auto 10vw;
@@ -889,8 +900,9 @@ form :placeholder-shown {
     float: left;
     text-align: left;
   }
-  .block__author p {
+  .block__author .p--about {
     text-align: justify;
+    font-size: 1.6rem;
   }
   .block__author h6 {
     text-align: left;
