@@ -35,3 +35,9 @@
     width: 50vw; 
     height: 200vh;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #mycontainer {max-width: 100vw;
+    }
+
+}
