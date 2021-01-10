@@ -105,6 +105,11 @@ p {
 .headings--entradas {
   margin-left: 18.5vw;
   margin-top: 10vh;
+  margin-left: 21vw;
+}
+
+.headings--projects {
+  margin-top: 9vh;
 }
 
 html {
@@ -522,6 +527,15 @@ div a {
 
 .card-body p {
   line-height: 28px;
+}
+
+.card-margin {
+  margin-top: 2vh;
+}
+
+div.col {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /* ========================================================================= */
